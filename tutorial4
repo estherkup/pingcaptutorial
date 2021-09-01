@@ -1,0 +1,2 @@
+select start_station_name, count(ride_id) as count from `trips` group by start_station_name order by count asc limit 10;
+select end_station_name, count(ride_id) as count from `trips` group by end_station_name order by count asc limit 10;
